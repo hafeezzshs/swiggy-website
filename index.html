@@ -13,36 +13,38 @@
   </head>
   <body>
     <!-- Header Section -->
-    <div style="display: flex; justify-content: space-between">
-      <div style="width: 100%; margin-left: 2rem; margin-right: 3rem">
+    <div class="header-section">
+      <div class="header-content">
         <div class="header">
           <img class="logo" src="images/logo.svg" alt="swiggy-logo" />
-          <span>
+          <span class="navLinks">
+            <img src="images/close.svg" class="icon" onclick="hideMenu()" />
             <button class="login-btn">Login</button>
             <button class="signup-btn">Sign up</button>
+            <img src="images/menu.svg" class="icon" onclick="showMenu()" />
           </span>
         </div>
         <p class="question-loop"><span></span></p>
-        <h2 style="font-size: 24px; font-weight: 200; margin-top: 0; color: #2e2d2d">
-          Order food from favourite restaurants near you.
-        </h2>
-        <div style="display: flex; justify-content: space-between">
+        <h2>Order food from favourite restaurants near you.</h2>
+        <div class="delivery-loc">
           <input class="location-input" type="text" placeholder="Enter your delivery location" />
           <button class="food-btn">FIND FOOD</button>
         </div>
-        <p style="font-size: 15px; font-weight: 400; color: grey">POPULAR CITIES IN INDIA</p>
-        <a style="font-weight: bold" href="#">Ahmedabad</a>
-        <a style="font-weight: 400" href="#">Bangalore</a>
-        <a style="font-weight: bold" href="#">Chennai</a>
-        <a style="font-weight: 400" href="#">Delhi</a>
-        <a style="font-weight: bold" href="#">Gurgaon</a>
-        <a style="font-weight: 400" href="#">Hyderbad</a>
-        <a style="font-weight: bold" href="#">Kolkata</a>
-        <a style="font-weight: 400" href="#">Mumbai</a>
-        <a style="font-weight: bold" href="#">Pune</a>
-        <a style="font-weight: 400" href="#">& more.</a>
+        <p class="cities-list">POPULAR CITIES IN INDIA</p>
+        <div class="header-cities">
+          <a class="bold-cls" href="#">Ahmedabad</a>
+          <a class="normal-cls" href="#">Bangalore</a>
+          <a class="bold-cls" href="#">Chennai</a>
+          <a class="normal-cls" href="#">Delhi</a>
+          <a class="bold-cls" href="#">Gurgaon</a>
+          <a class="normal-cls" href="#">Hyderbad</a>
+          <a class="bold-cls" href="#">Kolkata</a>
+          <a class="normal-cls" href="#">Mumbai</a>
+          <a class="bold-cls" href="#">Pune</a>
+          <a class="normal-cls" href="#">& more.</a>
+        </div>
       </div>
-      <img style="height: 85vh" src="images/dishes.png" alt="dishes" />
+      <img class="dishes" style="height: 85vh" src="images/dishes.png" alt="dishes" />
     </div>
 
     <!-- App info section -->
@@ -229,7 +231,6 @@
     </div>
 
     <!-- EXPLORE EVERY RESTAURANTS NEAR ME  section-->
-
     <div class="restaurants-section">
       <span style="border-bottom: grey 1px solid"></span>
       <p>EXPLORE EVERY RESTAURANTS NEAR ME</p>
@@ -291,5 +292,17 @@
         <a class="twitter" href="#"><img src="images/twitter-icon.png" alt="" /></a>
       </div>
     </div>
+
+    <!---------- Javascript for Toggle Menu  ----------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      navLinks.style.right = window.outerWidth < 700 ? "-200px" : "0";
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>

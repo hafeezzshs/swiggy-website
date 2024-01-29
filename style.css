@@ -10,17 +10,122 @@ body {
   background: white;
 }
 
+/* Header section */
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content {
+  width: 100%;
+  margin-left: 2rem;
+  margin-right: 3rem;
+}
+
+.header-content h2 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 0;
+  color: #2e2d2d;
+}
+
+.delivery-loc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cities-list {
+  font-size: 15px;
+  font-weight: 400;
+  color: grey;
+}
+
+.bold-cls {
+  font-weight: bold;
+}
+
+.normal-cls {
+  font-weight: 400;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   height: 180px;
   width: 180px;
 }
 
-/* Header section */
+.icon {
+  height: 24px;
+  display: none;
+}
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 700px) {
+  html,
+  body {
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    height: 100px;
+    width: 200px;
+  }
+  .icon {
+    height: 24px;
+    display: block;
+    background: #000;
+  }
+  .navLinks {
+    display: none;
+  }
+  .dishes {
+    display: none;
+  }
+  .header-content .question-loop {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .header-content h2 {
+    font-size: 14px;
+  }
+  .delivery-loc {
+    display: block;
+    gap: 10px;
+    height: 100px;
+    width: 280px;
+    font-size: 14px;
+  }
+  .location-input {
+    border: 1px grey solid;
+    outline: none;
+    height: 6px;
+  }
+  .delivery-loc .food-btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+  .header-cities {
+    width: 320px;
+  }
+  .cities-list {
+    font-size: 13px;
+    line-height: 0.8;
+  }
+  .bold-cls,
+  .normal-cls {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    margin-right: 0.5rem;
+  }
 }
 
 .login-btn {
