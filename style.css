@@ -41,13 +41,6 @@ body {
   color: grey;
 }
 
-.bold-cls {
-  font-weight: bold;
-}
-
-.normal-cls {
-  font-weight: 400;
-}
 .header {
   display: flex;
   justify-content: space-between;
@@ -64,6 +57,22 @@ body {
   display: none;
 }
 
+.dishes {
+  width: 100%;
+  height: 85vh;
+}
+.header-cities > a:nth-child(odd) {
+  font-weight: bold;
+}
+.header-cities > a:nth-child(even) {
+  font-weight: 400;
+}
+.header-cities > a {
+  text-decoration: none;
+  color: grey;
+  font-size: 18px;
+  margin-right: 0.5rem;
+}
 @media (max-width: 700px) {
   html,
   body {
@@ -73,7 +82,7 @@ body {
 
   .logo {
     height: 100px;
-    width: 200px;
+    width: 130px;
   }
   .icon {
     height: 24px;
@@ -115,16 +124,12 @@ body {
   .header-cities {
     width: 320px;
   }
+  .header-cities > a {
+    font-size: 12px;
+  }
   .cities-list {
     font-size: 13px;
     line-height: 0.8;
-  }
-  .bold-cls,
-  .normal-cls {
-    text-decoration: none;
-    color: grey;
-    font-size: 14px;
-    margin-right: 0.5rem;
   }
 }
 
@@ -299,6 +304,71 @@ a {
 .fast-order p {
   font-size: 14px;
   color: #d7ac92;
+}
+
+@media (max-width: 700px) {
+  .order-flow {
+    width: 366px;
+    padding-bottom: 22rem;
+  }
+  .order-content {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .no-min-order {
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .no-min-order img {
+    width: 80px;
+    height: 120px;
+    margin-top: 2px;
+    padding-left: 5rem;
+  }
+
+  .no-min-order h3 {
+    font-size: 18px;
+    padding-left: 2rem;
+  }
+
+  .no-min-order p {
+    font-size: 12px;
+    padding-left: 1rem;
+    color: #d7ac92;
+  }
+
+  .live-track-order img {
+    width: 80px;
+    height: 120px;
+    margin-top: 2px;
+  }
+
+  .live-track-order h3 {
+    font-size: 18px;
+  }
+
+  .live-track-order p {
+    font-size: 12px;
+    color: #d7ac92;
+  }
+
+  .fast-order img {
+    width: 80px;
+    height: 120px;
+    margin-top: 2px;
+  }
+
+  .fast-order h3 {
+    font-size: 18px;
+  }
+
+  .fast-order p {
+    font-size: 12px;
+    color: #d7ac92;
+  }
 }
 
 /* Download Info section */
