@@ -419,6 +419,60 @@ a {
   height: 489px;
 }
 
+@media (max-width: 700px) {
+  .download-info {
+    display: block;
+    width: 366px;
+    height: 42vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .download-info-content h2 {
+    width: 400px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2rem;
+  }
+  .download-info-content p {
+    width: 400px;
+    font-size: 14px;
+    color: grey;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-left: 2rem;
+  }
+  .download-info-content a {
+    padding-right: 0;
+    margin-right: 0;
+    gap: 2rem;
+    padding-left: 20px;
+  }
+  .download-info-content img {
+    padding-left: 24px;
+    width: 120px;
+  }
+  .download-info-screen-1 {
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    margin-left: 1rem;
+    width: 170px;
+    height: 200px;
+  }
+  .download-info-screen-2 {
+    padding-top: 0;
+    padding-right: 0;
+    margin-right: 0;
+    width: 165px;
+    height: 200px;
+    padding-bottom: 8px;
+  }
+}
+
 /* <!-- About section --> */
 
 .about-section {
