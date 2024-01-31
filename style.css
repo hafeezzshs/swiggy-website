@@ -665,6 +665,29 @@ a {
   font-weight: bold;
 }
 
+@media (max-width: 700px) {
+  .best-place-section {
+    background: #000;
+    width: 366px;
+    display: flex;
+    flex-direction: column;
+  }
+  .best-place-section p {
+    color: #888;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 1rem;
+    margin-bottom: 0;
+  }
+  .best-city-list {
+    margin: 1rem;
+    display: grid;
+    height: 160px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+}
+
 /* Best cuisines Near Me Section */
 
 .best-cuisines-section {
