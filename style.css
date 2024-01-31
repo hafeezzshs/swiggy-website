@@ -775,7 +775,27 @@ a {
 .restaurants:hover {
   font-weight: bold;
 }
-
+@media (max-width: 700px) {
+  .restaurants-section {
+    background: #000;
+    width: 366px;
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurants-section p {
+    color: #888;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 1rem;
+    margin-bottom: 0;
+  }
+  .restaurants-near-me-list {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
 /* <!-- Footer section --> */
 
 .footer-section {
