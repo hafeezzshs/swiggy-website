@@ -545,6 +545,39 @@ a {
   transition: 0.8s;
 }
 
+@media (max-width: 700px) {
+  .about-section {
+    width: 366px;
+    height: 55vh;
+    color: grey;
+    display: block;
+  }
+  .company-details-list {
+    margin: 1rem;
+    padding-top: 0;
+    display: flex;
+    gap: 10px;
+  }
+  .contact-details-list {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 0;
+    display: flex;
+    gap: 14px;
+  }
+  .legal-details-list {
+    margin-top: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .download-apps {
+    display: none;
+  }
+}
+
 /* <!-- Deliver Section --> */
 
 .delivery-section {
