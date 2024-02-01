@@ -73,11 +73,13 @@ body {
   font-size: 18px;
   margin-right: 0.5rem;
 }
-@media (max-width: 700px) {
+
+@media (max-width: 366px) {
   html,
   body {
     font-size: 18px;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .logo {
@@ -86,11 +88,22 @@ body {
   }
   .icon {
     height: 24px;
+    width: 24px;
     display: block;
+    cursor: pointer;
     background: #000;
   }
   .navLinks {
     display: none;
+    background: blue;
+    flex-direction: column;
+    position: relative;
+  }
+  .login-btn {
+    padding: 1rem;
+  }
+  .signup-btn {
+    padding: 1rem;
   }
   .dishes {
     display: none;
@@ -306,7 +319,7 @@ a {
   color: #d7ac92;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 366px) {
   .order-flow {
     width: 366px;
     padding-bottom: 22rem;
@@ -419,7 +432,7 @@ a {
   height: 489px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 366px) {
   .download-info {
     display: block;
     width: 366px;
@@ -545,7 +558,7 @@ a {
   transition: 0.8s;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 366px) {
   .about-section {
     width: 366px;
     height: 55vh;
@@ -610,7 +623,7 @@ a {
   font-weight: bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 366px) {
   .delivery-section {
     width: 366px;
     background: #000;
@@ -665,7 +678,7 @@ a {
   font-weight: bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 366px) {
   .best-place-section {
     background: #000;
     width: 366px;
@@ -720,7 +733,7 @@ a {
   font-weight: bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 366px) {
   .best-cuisines-section {
     background: #000;
     width: 366px;
@@ -775,7 +788,7 @@ a {
 .restaurants:hover {
   font-weight: bold;
 }
-@media (max-width: 700px) {
+@media (max-width: 366px) {
   .restaurants-section {
     background: #000;
     width: 366px;
@@ -830,7 +843,7 @@ a {
   transition: 0.5s;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 366px) {
   .footer-section {
     width: 366px;
     background: #000;
