@@ -17,11 +17,9 @@
       <div class="header-content">
         <div class="header">
           <img class="logo" src="images/logo.svg" alt="swiggy-logo" />
-          <span class="navLinks">
-            <img src="images/close.svg" class="icon" onclick="hideMenu()" />
+          <span>
             <button class="login-btn">Login</button>
             <button class="signup-btn">Sign up</button>
-            <img src="images/menu.svg" class="icon" onclick="showMenu()" />
           </span>
         </div>
         <p class="question-loop"><span></span></p>
@@ -291,17 +289,5 @@
         <a class="twitter" href="#"><img src="images/twitter-icon.png" alt="" /></a>
       </div>
     </div>
-
-    <!---------- Javascript for Toggle Menu  ----------->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      navLinks.style.right = window.outerWidth < 366 ? "-200px" : "0";
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
   </body>
 </html>
